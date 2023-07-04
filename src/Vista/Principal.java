@@ -26,6 +26,7 @@ public class Principal extends JFrame {
 				try {
 					Principal frame = new Principal();
 					frame.setVisible(true);
+				
 					
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -38,6 +39,7 @@ public class Principal extends JFrame {
 	 * Create the frame.
 	 */
 	public Principal() {
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 532, 537);
 		contentPane = new JPanel();
@@ -50,7 +52,9 @@ public class Principal extends JFrame {
 		Button btnMesa1 = new Button("Mesa 1");
 		btnMesa1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				Mesa mesa1 = new Mesa();
+				mesa1.setVisible(true);
+				btnMesa1.setBackground(Color.red);
 
 			}
 		});
