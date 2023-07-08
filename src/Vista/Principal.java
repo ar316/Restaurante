@@ -38,6 +38,7 @@ public class Principal extends JFrame {
 	/**
 	 * Create the frame.
 	 */
+	
 	public Principal() {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

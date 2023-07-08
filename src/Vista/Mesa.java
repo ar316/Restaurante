@@ -34,19 +34,6 @@ public class Mesa extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					
-					new Mesa().setVisible(true);
-					
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
 
 	/**
 	 * Create the frame.
@@ -84,7 +71,7 @@ public class Mesa extends JFrame {
 	
 		
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 311, 600);
+		setBounds(100, 100, 311, 639);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -92,7 +79,7 @@ public class Mesa extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Realizar pedido");
-		lblNewLabel.setBounds(171, 13, 97, 16);
+		lblNewLabel.setBounds(107, 11, 97, 16);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Empanadas");
@@ -175,6 +162,10 @@ public class Mesa extends JFrame {
 		JLabel lblNewLabel_1_1_2 = new JLabel("2,000");
 		lblNewLabel_1_1_2.setBounds(151, 407, 83, 16);
 		contentPane.add(lblNewLabel_1_1_2);
+		
+		JButton btnNewButton = new JButton("Realizar pedido");
+		btnNewButton.setBounds(88, 566, 116, 23);
+		contentPane.add(btnNewButton);
 		CalcularTotal();
 	
 		
